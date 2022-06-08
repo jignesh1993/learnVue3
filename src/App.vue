@@ -14,6 +14,11 @@
 </ul>
 <HtmlBinding />
 <ClassBinding />
+
+//Props with Example
+<StudentComponent :name="name" />
+<TeacherComponent name="peter" />
+
 <br /><br /><br />
 </template>
 
@@ -29,7 +34,8 @@ import ChildComponent from './components/ChildComponent.vue';
 import UserComponent from './components/UserComponent.vue';
 import HtmlBinding from './components/HtmlBinding.vue';
 import ClassBinding from './components/ClassBinding.vue';
-
+import StudentComponent from './components/StudentComponent.vue';
+import TeacherComponent from './components/TeacherComponent.vue'
 
 export default {
     name: 'App',
@@ -43,10 +49,13 @@ export default {
         ChildComponent,
         UserComponent,
         HtmlBinding,
-        ClassBinding
+        ClassBinding,
+        StudentComponent,
+        TeacherComponent
     },
     data() {
         return {
+            name: 'Bruce',
             user: {
                 name: 'peter',
                 email: 'peter@test.com'
