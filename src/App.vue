@@ -16,9 +16,12 @@
 <HtmlBinding />
 <ClassBinding />
 
-//Props with Example
+// Props with Example
 <StudentComponent :name="name" />
 <TeacherComponent name="peter" />
+
+// Ref in vuejs
+<RefComponent />
 
 <br /><br /><br />
 </template>
@@ -37,6 +40,7 @@ import HtmlBinding from './components/HtmlBinding.vue';
 import ClassBinding from './components/ClassBinding.vue';
 import StudentComponent from './components/StudentComponent.vue';
 import TeacherComponent from './components/TeacherComponent.vue'
+import RefComponent from './components/RefComponent.vue';
 
 export default {
     name: 'App',
@@ -52,7 +56,8 @@ export default {
         HtmlBinding,
         ClassBinding,
         StudentComponent,
-        TeacherComponent
+        TeacherComponent,
+        RefComponent
     },
     data() {
         return {
