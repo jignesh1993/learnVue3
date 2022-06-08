@@ -6,7 +6,8 @@
 <GetChkboxRadioValue />
 <IfElseCondition />
 <ForLoop />
-<ChildComponent name="jignesh patel" :user="user" :getData="getData" />
+<h3>Prop from child user is : {{childUser}}</h3>
+<ChildComponent name="jignesh patel" :user="user" :getData="getData" :getUser="getUserName" />
 <ul>
     <li v-for="item in users" :key="item.name">
         <UserComponent :data="item" :getAlert="getAlert" />
@@ -56,6 +57,7 @@ export default {
     data() {
         return {
             name: 'Bruce',
+            childUser: '',
             user: {
                 name: 'peter',
                 email: 'peter@test.com'
@@ -79,8 +81,12 @@ export default {
         getData() {
             console.log('<<-- Parent function called -->>');
         },
-        getAlert(data){
-            alert(`Hello ${data.name}` )
+        getAlert(data) {
+            alert(`Hello ${data.name}`)
+        },
+        // getUserName() for getting prop from child to parent component
+        getUserName(name) {
+            this.childUser = name
         }
     }
 }
