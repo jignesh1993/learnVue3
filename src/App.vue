@@ -16,12 +16,15 @@
 <HtmlBinding />
 <ClassBinding />
 
-// Props with Example
+<!-- Props with Example -->
 <StudentComponent :name="name" />
 <TeacherComponent name="peter" />
 
-// Ref in vuejs
+<!-- Ref in vuejs -->
 <RefComponent />
+
+<!-- Simple Form -->
+<SimpleForm />
 
 <br /><br /><br />
 </template>
@@ -31,7 +34,6 @@ import HelloWorld from './components/HelloWorld.vue'
 import Home from './components/Home.vue'
 import GetInputValue from './components/GetInputValue.vue';
 import GetChkboxRadioValue from './components/GetChkboxRadioValue.vue';
-'';
 import IfElseCondition from './components/IfElseCondition.vue';
 import ForLoop from './components/ForLoop.vue';
 import ChildComponent from './components/ChildComponent.vue';
@@ -41,6 +43,7 @@ import ClassBinding from './components/ClassBinding.vue';
 import StudentComponent from './components/StudentComponent.vue';
 import TeacherComponent from './components/TeacherComponent.vue'
 import RefComponent from './components/RefComponent.vue';
+import SimpleForm from './components/SimpleForm.vue';
 
 export default {
     name: 'App',
@@ -57,7 +60,8 @@ export default {
         ClassBinding,
         StudentComponent,
         TeacherComponent,
-        RefComponent
+        RefComponent,
+        SimpleForm
     },
     data() {
         return {
