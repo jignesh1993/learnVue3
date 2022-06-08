@@ -1,7 +1,11 @@
 <template>
 <div class="center">
     <h2>Simple Form</h2>
-    <p>{{form}}</p>
+    <ul id="menu">
+        <li v-for="item in error" v-bind:key="item">
+            {{item}} is not valid
+        </li>
+    </ul>
     <form>
         <label>Email:</label>
         <input type="text" placeholder="Enter Email" v-model="form.email" /> <br /><br />
@@ -48,12 +52,23 @@ export default {
                 country: '',
                 technology: [],
                 gender: ''
-            }
+            },
+            error: [],
         }
     },
     methods: {
         login() {
-            console.log('<<-- this.form-->> ', this.form);
+            this.error = [];
+            for (const item in this.form) {
+                if (this.form[item] === '' || this.form[item].length === 0) {
+                    this.error.push(item)
+                }
+            }
+            if (this.error.length === 0) {
+                alert('Data Submitted!')
+            }
+            console.log('<<-- this.form -->>', this.form);
+            console.log('<<-- this.error -->>', this.error);
         }
     }
 }
@@ -62,9 +77,14 @@ export default {
 <style scoped>
 div {
     background-color: lightblue;
+    padding: 20px;
 }
 
 .center {
     text-align: center;
+}
+
+#menu li{
+  list-style-type: none;
 }
 </style>
