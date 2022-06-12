@@ -26,6 +26,10 @@
 <!-- Simple Form -->
 <SimpleForm />
 
+<br />
+
+<FormModifiers />
+
 <br /><br /><br />
 </template>
 
@@ -44,6 +48,7 @@ import StudentComponent from './components/StudentComponent.vue';
 import TeacherComponent from './components/TeacherComponent.vue'
 import RefComponent from './components/RefComponent.vue';
 import SimpleForm from './components/SimpleForm.vue';
+import FormModifiers from './components/FormModifiers.vue';
 
 export default {
     name: 'App',
@@ -61,7 +66,8 @@ export default {
         StudentComponent,
         TeacherComponent,
         RefComponent,
-        SimpleForm
+        SimpleForm,
+        FormModifiers
     },
     data() {
         return {
