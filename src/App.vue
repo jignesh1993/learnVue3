@@ -30,6 +30,9 @@
 
 <FormModifiers />
 
+<br />
+<NonPropsData data="Some data" id="user-cmp" />
+
 <br /><br /><br />
 </template>
 
@@ -49,6 +52,7 @@ import TeacherComponent from './components/TeacherComponent.vue'
 import RefComponent from './components/RefComponent.vue';
 import SimpleForm from './components/SimpleForm.vue';
 import FormModifiers from './components/FormModifiers.vue';
+import NonPropsData from './components/NonPropsData.vue';
 
 export default {
     name: 'App',
@@ -67,7 +71,8 @@ export default {
         TeacherComponent,
         RefComponent,
         SimpleForm,
-        FormModifiers
+        FormModifiers,
+        NonPropsData
     },
     data() {
         return {
