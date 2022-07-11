@@ -33,6 +33,9 @@
 <br />
 <NonPropsData data="Some data" id="user-cmp" />
 
+<br />
+<ComputedProperty />
+
 <br /><br /><br />
 </template>
 
@@ -53,6 +56,7 @@ import RefComponent from './components/RefComponent.vue';
 import SimpleForm from './components/SimpleForm.vue';
 import FormModifiers from './components/FormModifiers.vue';
 import NonPropsData from './components/NonPropsData.vue';
+import ComputedProperty from './components/ComputedProperty.vue';
 
 export default {
     name: 'App',
@@ -72,7 +76,8 @@ export default {
         RefComponent,
         SimpleForm,
         FormModifiers,
-        NonPropsData
+        NonPropsData,
+        ComputedProperty
     },
     data() {
         return {
