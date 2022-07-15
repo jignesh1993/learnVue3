@@ -36,6 +36,9 @@
 <br />
 <ComputedProperty />
 
+<br />
+<WatchersComponent />
+
 <br /><br /><br />
 </template>
 
@@ -57,6 +60,7 @@ import SimpleForm from './components/SimpleForm.vue';
 import FormModifiers from './components/FormModifiers.vue';
 import NonPropsData from './components/NonPropsData.vue';
 import ComputedProperty from './components/ComputedProperty.vue';
+import WatchersComponent from './components/WatchersComponent.vue';
 
 export default {
     name: 'App',
@@ -77,7 +81,8 @@ export default {
         SimpleForm,
         FormModifiers,
         NonPropsData,
-        ComputedProperty
+        ComputedProperty,
+        WatchersComponent
     },
     data() {
         return {
