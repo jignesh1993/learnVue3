@@ -39,6 +39,9 @@
 <br />
 <WatchersComponent />
 
+<br />
+<SlotHome />
+
 <br /><br /><br />
 </template>
 
@@ -61,6 +64,7 @@ import FormModifiers from './components/FormModifiers.vue';
 import NonPropsData from './components/NonPropsData.vue';
 import ComputedProperty from './components/ComputedProperty.vue';
 import WatchersComponent from './components/WatchersComponent.vue';
+import SlotHome from "./components/SlotHome.vue";
 
 export default {
     name: 'App',
@@ -82,7 +86,8 @@ export default {
         FormModifiers,
         NonPropsData,
         ComputedProperty,
-        WatchersComponent
+        WatchersComponent,
+        SlotHome
     },
     data() {
         return {
