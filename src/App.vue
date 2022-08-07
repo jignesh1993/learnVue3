@@ -42,6 +42,14 @@
 <br />
 <SlotHome />
 
+<br />
+<h1>Dynamic Components</h1>
+<button @click="tab='PhpComponent'">Load Php</button>
+<button @click="tab='NodeComponent'">Load Node</button>
+<button @click="tab='JavaComponent'">Load Java</button>
+
+<component :is='tab'/>
+
 <br /><br /><br />
 </template>
 
@@ -65,6 +73,9 @@ import NonPropsData from './components/NonPropsData.vue';
 import ComputedProperty from './components/ComputedProperty.vue';
 import WatchersComponent from './components/WatchersComponent.vue';
 import SlotHome from "./components/SlotHome.vue";
+import PhpComponent from './components/PhpComponent.vue';
+import NodeComponent from './components/NodeComponent.vue';
+import JavaComponent from './components/JavaComponent.vue';
 
 export default {
     name: 'App',
@@ -87,7 +98,10 @@ export default {
         NonPropsData,
         ComputedProperty,
         WatchersComponent,
-        SlotHome
+        SlotHome,
+        PhpComponent,
+        NodeComponent,
+        JavaComponent
     },
     data() {
         return {
@@ -109,7 +123,8 @@ export default {
             }, {
                 name: 'najee',
                 email: 'najee@test.com'
-            }]
+            }],
+            tab: 'JavaComponent'
         }
     },
     methods: {
