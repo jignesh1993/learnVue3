@@ -55,6 +55,9 @@
     <FooterComponent />
 </teleport>
 
+<br />
+<LifeCycleMethComponent />
+
 <br /><br /><br />
 </template>
 
@@ -82,6 +85,7 @@ import PhpComponent from './components/PhpComponent.vue';
 import NodeComponent from './components/NodeComponent.vue';
 import JavaComponent from './components/JavaComponent.vue';
 import FooterComponent from './components/FooterComponent.vue';
+import LifeCycleMethComponent from './components/LifeCycleMethComponent.vue'
 
 export default {
     name: 'App',
@@ -109,6 +113,7 @@ export default {
     NodeComponent,
     JavaComponent,
     FooterComponent,
+    LifeCycleMethComponent
 },
     data() {
         return {
