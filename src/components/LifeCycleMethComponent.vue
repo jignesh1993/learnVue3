@@ -17,6 +17,12 @@ export default {
     created(){
         this.name = 'Jane2'
         alert('After Created')
+    },
+    beforeMount() {
+        console.log('beforeMount ==>>', this.$el);
+    },
+    mounted() {
+        console.log('Mounted ==>>', this.$el);
     }
 }
 </script>
