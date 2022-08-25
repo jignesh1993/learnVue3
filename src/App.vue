@@ -50,6 +50,11 @@
 
 <component :is='tab'/>
 
+<br />
+<teleport to="#footer">
+    <FooterComponent />
+</teleport>
+
 <br /><br /><br />
 </template>
 
@@ -76,33 +81,35 @@ import SlotHome from "./components/SlotHome.vue";
 import PhpComponent from './components/PhpComponent.vue';
 import NodeComponent from './components/NodeComponent.vue';
 import JavaComponent from './components/JavaComponent.vue';
+import FooterComponent from './components/FooterComponent.vue';
 
 export default {
     name: 'App',
     components: {
-        HelloWorld,
-        Home,
-        GetInputValue,
-        GetChkboxRadioValue,
-        IfElseCondition,
-        ForLoop,
-        ChildComponent,
-        UserComponent,
-        HtmlBinding,
-        ClassBinding,
-        StudentComponent,
-        TeacherComponent,
-        RefComponent,
-        SimpleForm,
-        FormModifiers,
-        NonPropsData,
-        ComputedProperty,
-        WatchersComponent,
-        SlotHome,
-        PhpComponent,
-        NodeComponent,
-        JavaComponent
-    },
+    HelloWorld,
+    Home,
+    GetInputValue,
+    GetChkboxRadioValue,
+    IfElseCondition,
+    ForLoop,
+    ChildComponent,
+    UserComponent,
+    HtmlBinding,
+    ClassBinding,
+    StudentComponent,
+    TeacherComponent,
+    RefComponent,
+    SimpleForm,
+    FormModifiers,
+    NonPropsData,
+    ComputedProperty,
+    WatchersComponent,
+    SlotHome,
+    PhpComponent,
+    NodeComponent,
+    JavaComponent,
+    FooterComponent,
+},
     data() {
         return {
             name: 'Bruce',
