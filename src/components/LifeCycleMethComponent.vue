@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
 <h1>Life Cycle Method {{ name }}</h1>
 <h1>beforeUpdate and updated</h1>
 <h1 ref="count">{{ counter }}</h1>
@@ -56,4 +56,4 @@ export default {
 h1 {
     color: orange;
 }
-</style>
+</style> -->
