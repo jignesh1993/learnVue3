@@ -1,7 +1,9 @@
 <template>
     <router-link to="/">Home</router-link> <br/>
     <router-link to="/login">Login</router-link> <br/>
-    <router-link to="/profile">Profile</router-link>
+    <router-link to="/profile/anil">Anil's Profile</router-link> <br/>
+    <router-link to="/profile/peter">Peter's Profile</router-link> <br/>
+    <router-link to="/profile/bruce">Bruce's Profile</router-link> <br/>
     <router-view></router-view>
 </template>
 
